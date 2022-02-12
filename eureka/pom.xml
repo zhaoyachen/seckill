@@ -12,7 +12,6 @@
     <description>Demo project for Spring Boot</description>
 
 
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -33,6 +32,7 @@
     </dependencies>
 
     <build>
+        <finalName>eureka</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
