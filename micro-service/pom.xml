@@ -13,6 +13,10 @@
     <groupId>com.zyc</groupId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <modules>
+        <module>micro-goods</module>
+        <module>micro-orders</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>com.zyc</groupId>

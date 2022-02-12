@@ -21,7 +21,7 @@
     </modules>
     <name>seckill</name>
     <description>Demo project for Spring Boot</description>
-    <!--表示这是一个pom包-->
+    <!--表示这是一个pom包,打包时不会编译-->
     <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
@@ -71,6 +71,21 @@
                 <!--占位符的key：activeProfile value：local -->
                 <activeProfile>test</activeProfile>
                 <configServerPath>http://localhost1:30000</configServerPath>
+            </properties>
+        </profile>
+
+        <!--生产占位符-->
+        <profile>
+            <!--占位符的名称-->
+            <id>prod</id>
+            <activation>
+                <!--当前是否默认使用这个占位符-->
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <!--占位符的key：activeProfile value：local -->
+                <activeProfile>prod</activeProfile>
+                <configServerPath>http://192.168.17.100:30000</configServerPath>
             </properties>
         </profile>
     </profiles>
