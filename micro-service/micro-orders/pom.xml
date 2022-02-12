@@ -11,4 +11,7 @@
     <name>micro-orders</name>
     <description>Demo project for Spring Boot</description>
 
+    <build>
+        <finalName>micro_orders</finalName>
+    </build>
 </project>

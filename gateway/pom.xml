@@ -43,7 +43,8 @@
     </dependencies>
 
     <build>
-
+        <!--编译打包后的名称-->
+        <finalName>gateway</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
