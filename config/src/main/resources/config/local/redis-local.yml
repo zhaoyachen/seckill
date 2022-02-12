@@ -1,0 +1,6 @@
+spring:
+  redis:
+    host: 127.0.0.1
+  cache:
+    redis:
+      time-to-live: 600000

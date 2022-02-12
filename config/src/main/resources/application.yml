@@ -1,0 +1,19 @@
+server:
+  port: 30000
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        #使用git管理配置文件
+        #        git:
+        #          uri:
+        #使用svn管理配置文件
+        #        svn:
+        #          uri:
+        #本地管理配置文件
+        native:
+          search-locations: [ 'classpath:config/local','classpath:config/test','classpath:config/prod' ]
+  profiles:
+    active: native  #配置中心使用本地管理配置文件 需要这个配置项

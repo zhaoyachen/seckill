@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      uri: '@configServerPath@'
+      name: goods,eureka,datasource,redis
+      profile: '@activeProfile@' #maven 占位符的使用 注意：bootstrap.yml 默认无法使用maven占位符

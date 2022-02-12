@@ -1,0 +1,10 @@
+server:
+  port: 20000
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+    fetch-registry: false # 自我抓取 需要关掉这个值 否则报错：was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server

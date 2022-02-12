@@ -1,0 +1,17 @@
+server:
+  port: 80
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        #配置gateway的路由
+        - uri: lb://MICRO-GOODS
+          predicates:
+            - Path=/goods/**
+          filters:
+            - TokenLimiter
+        - uri: lb://MICRO-ORDERS
+          predicates:
+            - Path=/orders/**
