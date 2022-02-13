@@ -7,4 +7,5 @@ services:
     container_name: micro_orders
     restart: always
     network_mode: host
-
+    environment:
+      - TZ=Asia/Shanghai   #docker时区调整

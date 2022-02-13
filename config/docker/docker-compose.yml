@@ -7,4 +7,6 @@ services:
     container_name: config
     restart: always
     network_mode: host
+    environment:
+      - TZ=Asia/Shanghai   #docker时区调整
 
