@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  micro_orders:
+    build:
+      context: ./ #dockerfile所在文件夹路径
+      dockerfile: Dockerfile #dockerfile的名称
+    container_name: micro_orders
+    restart: always
+    network_mode: host
+
