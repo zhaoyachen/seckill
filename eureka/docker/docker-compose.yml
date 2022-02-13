@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  eureka:
+    build:
+      context: ./ #dockerfile所在文件夹路径
+      dockerfile: Dockerfile #dockerfile的名称
+    container_name: eureka
+    restart: always
+    network_mode: host
+
