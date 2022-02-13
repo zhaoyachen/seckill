@@ -16,4 +16,4 @@ EXPOSE 20000
 #VOLUME:用来向基础镜像中添加数据卷
 #VOLUME /root/mydata /root/condata
 #CMD:容器启动时需要执行的命令
-CMD ['java','-jar','eureka.jar']
+CMD java -jar eureka.jar
